@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
+    
+    <title>Randomized Dino</title>
+    
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:500,600,700,900&display=swap" rel="stylesheet">
+    
+    <!-- css -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.5/fullpage.min.css" integrity="sha512-hDXpx6vRwBR+f4rnj8BDQRpwfi4lvztz1KPkBPCG2XkTKiJ5Y6zq7/NsDmJRIQbquKchG0DVc6gmZiOE0ZXrvg==" crossorigin="anonymous" />
+</head>
+
+<body>
+    <div class="wrapper">  
+        <!-- OVERLAY
+        =============================== -->
+        <div class="overlay first"></div>
+        <div class="overlay second"></div>
+        <div class="overlay third"></div>
+
+        <!-- TEXT
+        =============================== -->
+        <div class="text">
+            <h1>
+                <span class="hidetext">Alfi</span>
+            </h1>
+            <h2>Maldino</h2>
+            <h3>
+                <span class="hidetext">Hello <br> There!</span>
+            </h3>
+            <p>
+                <span class="hidetext">
+                    Welcome. I'm Dino.
+                    I'm just a regular guy that having an interest to web design. So yeah, you guys looking at my portofolio with 180° lol. Sorry this make you bored. :(
+                    p.s if you having trouble with the responsive, I am really sorry. I'll get that fixed.
+                </span>
+            </p>
+        </div>
+
+        <div class="text2">
+            <h3>
+                <span class="hidetext">My <br> Portofolio</span>
+            </h3>
+            <p>
+                <span class="hidetext">
+                    scroll <br> for <br> more <br> detail.
+                </span>
+            </p>
+        </div>
+
+        <div id="fullPage">
+            <div class="section content">
+                <h1>
+                    <span class="hidetext">Kausa</span>
+                </h1>
+                <img class="image" src="/assets/kausa.png" alt="kausa">
+                <p>
+                    <span class="hidetext">
+                        This is e-commerce website that have not done yet. <br> Soon, it's gonna be done. :D
+                    </span>
+                </p>
+            </div>
+            <div class="section content2">
+                <h1>
+                    <span class="hidetext">Cloudent</span>
+                </h1>
+
+                <img class="image" src="/assets/cloudent.png" alt="cloudent">
+                <p>
+                    <span class="hidetext">
+                        Group project making a cloud storage based on website prototype.
+                    </span>
+                </p>
+            </div>
+            <div class="section content3">
+                <h1>
+                    <span class="hidetext">Auction</span>
+                </h1>
+                <img class="image" src="/assets/auction.png" alt="auction">
+                <p>
+                    <span class="hidetext">
+                        Group project making an auction website.
+                    </span>
+                </p> 
+            </div>
+
+            <div class="section content4">
+                <h1>
+                    <span class="hidetext">get in touch? :D</span>
+                </h1>
+                <p>
+                    <span class="hidetext">
+                        <a style="text-decoration:none" href="https://www.linkedin.com/in/alfi-maldino-851aa21b7/">LinkendIn</a> <br>
+                        <a style="text-decoration:none" href="https://wa.me/6281226494002">WhatsApp</a> <br>
+                        <a style="text-decoration:none" href="https://www.instagram.com/nohckr/">Instagram</a>
+                    </span>
+                    <p class="footer" style="font-size: 8pt; padding-top: 15px;">&copy;2020 Alfi Maldino</p>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- icons -->
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <!-- gsap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"
+        integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U=" crossorigin="anonymous"></script>
+    <!-- three js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/108/three.min.js"
+        integrity="sha256-3mBEX8I0uMLF7+AUjJeTCelosuorzYpqwBMBPDTyQqY=" crossorigin="anonymous"></script>
+    <!-- hover-effect js -->
+    <script src="./hover-effect.umd.js"></script>
+    <!-- fullpage js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.5/fullpage.min.js" 
+        integrity="sha512-+m1+m9XBnZXowk9jSNIlZYgtOPTIu6aUHha/4/3dk84PQcpWgrNd4/zKmOYno0BQK9nuJ6WgYBnuPqCrmvMNtg==" crossorigin="anonymous"></script>
+
+    <script>
+        // OVERLAY
+        TweenMax.to(".first", 1.5, {
+            delay: .5,
+            top: "-100%",
+            ease: Expo.easeInOut
+        });
+
+        TweenMax.to(".second", 1.5, {
+            delay: .7,
+            top: "-100%",
+            ease: Expo.easeInOut
+        });
+
+        TweenMax.to(".third", 1.5, {
+            delay: .9,
+            top: "-100%",
+            ease: Expo.easeInOut
+        });
+
+        // FULLPAGE
+        TweenMax.from(".content h1", 5.3, {
+            delay: 1.5,
+            opacity: 0,
+            y: "100%",
+            ease: Expo.easeInOut
+        });
+
+        TweenMax.from(".content img", 5.5, {
+            delay: 1.5,
+            opacity: 0,
+            y: "100%",
+            ease: Expo.easeInOut
+        }); 
+
+        TweenMax.from(".content p", 5.7, {
+            delay: 1.5,
+            opacity: 0,
+            y: "100%",
+            ease: Expo.easeInOut
+        }); 
+
+        // TEXT
+        TweenMax.from(".text h1 .hidetext", 1.5, {
+            delay: 1,
+            y: "100%",
+            ease: Expo.easeInOut
+        });
+
+        TweenMax.from(".text h3 .hidetext", 1.5, {
+            delay: 1.2,
+            y: "100%",
+            ease: Expo.easeInOut
+        });
+
+        TweenMax.from(".text2 h3 .hidetext", 3.5, {
+            delay: 1.2,
+            y: "100%",
+            ease: Expo.easeInOut
+        });
+
+        TweenMax.from(".text3 h3 .hidetext", 3.5, {
+            delay: 1.2,
+            y: "100%",
+            ease: Expo.easeInOut
+        });
+
+        TweenMax.from(".text p .hidetext", 1.5, {
+            delay: 1.3,
+            y: "100%",
+            ease: Expo.easeInOut
+        });
+
+        TweenMax.from(".text2 p .hidetext", 3.5, {
+            delay: 1.3,
+            y: "100%",
+            ease: Expo.easeInOut
+        });
+
+        TweenMax.from(".text3 p .hidetext", 3.5, {
+            delay: 1.3,
+            y: "100%",
+            ease: Expo.easeInOut
+        });
+
+        TweenMax.from(".text h2", 1.5, {
+            delay: 1.5,
+            opacity: 0,
+            x: "-10000",
+            ease: Expo.easeInOut
+        });
+
+        new fullpage('#fullPage', {
+            autoScrolling: true,
+            navigation: true,
+            scrollingSpeed: 1000,
+            controlArrows: false
+        })
+    </script>
+</body>
+</html>
