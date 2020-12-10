@@ -6,7 +6,7 @@
 
 body {
   font-family: 'Poppins';
-  background: url('assets/photo-1483366774565-c783b9f70e2c.jpeg');
+  background: url('/assets/photo-1483366774565-c783b9f70e2c.jpeg');
   /* background-size: cover; */
   /* background: #D8DBE2; */
   width: 100%;
@@ -120,7 +120,7 @@ ul {
 
 /* p */
 .text p {
-  transform: rotate(180deg);
+  /* transform: rotate(180deg); */
   width: 300px;
   font-size: 12px;
   margin-top: 30px;
@@ -196,6 +196,17 @@ ul {
 }
 
 .content4 h1 {
+  font-size: 32px;
+  text-transform: capitalize;
+  font-weight: 100;
+  line-height: 1;
+
+  position: relative;
+  overflow: hidden;
+  height: 50px;
+}
+
+.content5 h1 {
   font-size: 32px;
   text-transform: capitalize;
   font-weight: 100;
